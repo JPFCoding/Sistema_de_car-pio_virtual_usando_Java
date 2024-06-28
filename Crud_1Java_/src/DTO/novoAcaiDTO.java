@@ -2,6 +2,15 @@ package DTO;
 
 public class novoAcaiDTO {
 	private String nome_acai, preco_acai,descricao_acai;
+	private int id_acai;
+
+	public int getId_acai() {
+		return id_acai;
+	}
+
+	public void setId_acai(int id_acai) {
+		this.id_acai = id_acai;
+	}
 
 	public String getNome_acai() {
 		return nome_acai;

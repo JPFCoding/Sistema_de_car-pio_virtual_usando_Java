@@ -1,4 +1,4 @@
-package VIEW;
+package view;
 
 import java.awt.EventQueue;
 
@@ -72,7 +72,7 @@ public class frmLoginView extends JFrame {
 		contentPane.add(txtSenha);
 		
 		lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(frmLoginView.class.getResource("/Icons/LoginUmTela.png")));
+		lblNewLabel.setIcon(new ImageIcon(frmLoginView.class.getResource("/Icons/TelaLogin(2).png")));
 		lblNewLabel.setBounds(10, -12, 626, 485);
 		contentPane.add(lblNewLabel);
 		
@@ -92,6 +92,18 @@ public class frmLoginView extends JFrame {
 		btnSairLogin1.setOpaque(false);
 		btnSairLogin1.setBounds(533, 411, 85, 37);
 		contentPane.add(btnSairLogin1);
+		
+		JButton btnCalculadora = new JButton("");
+		btnCalculadora.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				CalculadoraView objcalcu = new CalculadoraView();
+				objcalcu.setVisible(true);
+			}
+		});
+		btnCalculadora.setOpaque(false);
+		btnCalculadora.setBorderPainted(false);
+		btnCalculadora.setBounds(522, 206, 85, 138);
+		contentPane.add(btnCalculadora);
 		
 		btnEntrarSistema = new JButton("");
 		btnEntrarSistema.addActionListener(new ActionListener() {
@@ -126,13 +138,7 @@ public class frmLoginView extends JFrame {
 		});
 		btnEntrarSistema.setOpaque(false);
 		btnEntrarSistema.setBorderPainted(false);
-		btnEntrarSistema.setBounds(409, 411, 91, 37);
+		btnEntrarSistema.setBounds(356, 411, 91, 37);
 		contentPane.add(btnEntrarSistema);
-		
-		JButton btnAbrirCaixa = new JButton("");
-		btnAbrirCaixa.setBorderPainted(false);
-		btnAbrirCaixa.setOpaque(false);
-		btnAbrirCaixa.setBounds(294, 411, 91, 37);
-		contentPane.add(btnAbrirCaixa);
 	}
 }
